@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Adrian Muresan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./logo/A.jpg">
+    <title>Personal Website</title>   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar-scroll">
+          <div class="container">
+              <a class="navbar-brand" href="#home">
+                <img src="./images/logo3.png" alt="Logo" width="40" height="35">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    <main class="main">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+        <section class="home" id="home">  
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                  <div class="heading">
+                      <h3>Hi there!</h3>
+                      <p><h2>I'm Adrian</h2></p>
+                      <h3>Welcome to my <strong>personal Website</strong></h3>
+                      <br>
+                      <h1>Introduction</h1>
+                      <p>I have decided to start a new and exciting journey to learn Software Development with <a href="https://www.correlation-one.com/">Correlation-One.</a> This is my first landing page, I am loking forward to learn more about coding that can help me to update my own portofolio which is the current landing page.</p>
+                  </div>
+                </div>
+                  <div class="col-sm-3">
+                        <div class="portofolio-pic">
+                          <img src="./images/me.JPG" alt="portofolio-pic" class="rounded-circle img-fluid rounded mx-auto d-block">
+                        </div>
+                  </div>  
+                </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="content">
+                    <h1>About Me</h1>
+                    <h4><b>My name is Adrian Muresan.</b></h4>
+                    <h4><b>Age: </b><span>30</span></h4>
+                    <h4><b>Gender: </b><span>Male</span></h4>
+                    <h4><b>Language: </b><span>Romanian, English</span></h4>
+                    </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="paragraph">
+                    <p>I am 30 years old and currently I am working at <strong>Amazon MME1 Darlington</strong>, UK within HR department as <strong>Workforce Staffing Coordnator for AMZL</strong>. I have been with Amazon since November 2018, but approximately two years and a half I have been worked with <strong>PMP Recrutiment</strong>, one of the Amazon agnency and after that I've become an <strong>Amazonian</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blog" id="blog">
+          <div class="container">
+            <div class="row">
+                  <h1>Blog</h1>
+                  <p>Over the past two weeks with <strong>Correlation-One Software Development</strong> Course I have learned about the <strong>HTML </strong>tags including : <strong>Images</strong> which are one of the most important parts of the website, <strong>Favicons</strong>, <strong>Tables</strong> that are great tools for organization content on the web page, <strong>Iframe</strong>, <strong>Form</strong> that are used to allow users to enter data, <strong>Button</strong>, Drop-down , Raddio button, links, headings, paragrapgh and a litle bit of CCS style. It has been interesting so far and I really enyoing it, I am looking forward to lear more about software development.</p>
+            </div>
+          </div>
+        </section>   
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="row">
+                <h3>Contact</h3>
+                  <form>
+                    <input type="text" name="field1" placeholder="Full Name" />
+                    <input type="email" name="field2" placeholder="Email" />
+                    <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+                    <input type="button" value="Send Message" />
+                  </form>            
+            </div>
+          </div>
+        </section>
+      </div> 
+  </main> 
+    <footer class="footer">
+        <div class="footer-item">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+            function adjust_textarea(h) {
+        h.style.height = "20px";
+        h.style.height = (h.scrollHeight)+"px";
+        }
+    </script>
+</body>
+</html>
