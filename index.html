@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Website">
+  <meta name="keywords" content="Adrian, adrimur, Portfolio, Website, HTML, CSS, JavaScript, Boostrap, Git">
+  <meta name="author" content="Adrian Muresan">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Redressed&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./logo/A.jpg">
+  <title>Personal Website</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="./images/logo3.png" alt="Logo" width="40" height="35">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <i class="fas fa-user"></i>
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">
+                <i class="fas fa-layer-group"></i>
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fas fa-address-book"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+        <section class="home" id="home">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-md-8 col-sm-9">
+                <div class="heading">
+                  <h3 id="msg" class="msg" style="white-space: pre-line;"></h3>
+                  <div class="designation">
+                    <h3>
+                      I'm Adrian,
+                      <span class="typed-text"></span>
+                      <span class="cursor">&nbsp;</span>
+                    </h3>
+                  </div>
+                  <h1>Introduction</h1>
+                  <p>I have decided to start a new and exciting journey to learn Software Development with <a
+                      href="https://www.correlation-one.com/" target="_blank"> Correlation-One</a>. I'm excited to learn
+                    more about coding so that I can update my own portfolio, which is currently the landing page.
+                    From the beginning of the training programme, this was my first <a
+                      href="./projects/landin_page/index.html" target="_blank">landing page</a>.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-sm-3">
+                <div class="portofolio-pic me-lg-5 d-flex justify-content-center">
+                  <img class="img-fluid" src="./images/me.JPG" alt="portofolio-pic"
+                    class="rounded-circle img-fluid rounded mx-auto d-block">
+                </div>
+              </div>
+              <a id="scroll-btn" href="#about"></a>
+            </div>
+          </div>
+        </section>
+        <section class="about js-scroll" id="about">
+          <div class="container">
+            <div class="row">
+              <h2 class="js-scroll">About Me</h2>
+              <div class="col-sm-6">
+                <div class="content">
+                  <h4 class="js-scroll"><b>My name is Adrian Muresan.</b></h4>
+                  <h4 class="js-scroll"><b>Age: </b><span>30</span></h4>
+                  <h4 class="js-scroll"><b>Gender: </b><span>Male</span></h4>
+                  <h4 class="js-scroll"><b>Language: </b><span>Romanian, English</span></h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="paragraph js-scroll">
+                  <p class="js-scroll">I am 30 years old and currently I am working at <strong>Amazon MME1
+                      Darlington</strong>, UK within
+                    HR department as <strong>Workforce Staffing Coordnator for AMZL</strong>. I have been with Amazon
+                    since November 2018, but approximately two years and a half I have been worked with <strong>PMP
+                      Recrutiment</strong>, one of the Amazon agnency and after that I've become an
+                    <strong>Amazonian</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="js-scroll">Portfolio</h2>
+                <p class="js-scroll">During the training programme with <strong>Correlation-One Software
+                  Development</strong>
+                Course I have
+                learned about the <strong class="text" data-toggle="tooltip" data-html="bottom"
+                  title="Hypertext markup language">HTML</strong> tags including : <strong>Images</strong> which are
+                one of the
+                most important parts of the website, <strong>Favicons</strong>, <strong>Tables</strong> that are great
+                tools for organization content on the web page, <strong>Iframe</strong>, <strong>Form</strong> that
+                are used to allow users to enter data, <strong>Button, Drop-down , Raddio button</strong>, links,
+                headings, paragrapgh.</p>
+                <p class="js-scroll">I have gained knowledge about <strong class="text" data-toggle="tooltip" data-placement="bottom"
+                  title="Cascading Style Sheets">CCS</strong> and how to use it in my project, in order to make my
+                webpage more visually engaging adding a <strong>font family, borders, backgrounds</strong> and
+                <strong>colors</strong> to text headings and paragraphs, <strong>grid organization, media queries, css
+                  animations, bootstrap</strong>.</p>
+                <p class="js-scroll">Moreover, I've also learned about <strong>GitHub</strong> upload and host my website on GitHub,
+                <strong>WordPress</strong> where users can create and manage content, customize the appearance of the
+                site, and perform other tasks.</p>
+                <p class="js-scroll">After learning all the basics of <strong class="text" data-toggle="tooltip" data-placement="bottom"
+                  title="Hypertext markup language">HTML</strong> and <strong class="text" data-toggle="tooltip"
+                  data-placement="bottom" title="Cascading Style Sheets">CCS</strong>, I've started learning the
+                modern frontend web development – <strong>JavaScript</strong>: basics of variables and data types,
+                different types of operators and control structures,modern operators, loops, and timers, events,
+                external JavaScript libraries - <strong>jQuery, Lodash, D3</strong>.</p>
+                <p class="js-scroll">It has been interesting so far and I really enyoing
+                it, I am looking forward to lear more about software development.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div id="carouselExampleControls" class="carousel js-scroll" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="./images/Country Populations.JPG" class="rounded d-block w-100" alt="country_populations"> 
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-primary font-weight-bold text-uppercase text-center">Population Bar Chart
+                                  Project - <span class="text-primary font-weight-bold text-lowercase text-center">implement it with
+                                    <span class="text-uppercase"> D3</span></span></h5>
+                                <p class="card-text">D3.js is a powerful JavaScript library for creating data-driven visualizations
+                                  on the web. It provides a wide range of tools for working with data and creating dynamic,
+                                  interactive graphics.</p>
+                                <a href="./projects/D3/index.html" class="btn btn-primary" target="_blank"><i
+                                    class="fas fa-code"></i> Live Demo</a>
+                                <a href="https://github.com/adrimur12/mywebsite_test/tree/main/projects/D3" class="btn btn-outline-dark"
+                                  target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="./images/sortlist.png" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-primary font-weight-bold text-uppercase text-center">List-sorter Project</h5>
+                                <p class="card-text">I created a list-sorter with an input box, a submit button, and output to provide the sorted list result for this project.</p>
+                                <a href="./projects/sort_list/index.html" class="btn btn-primary" target="_blank"><i
+                                  class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark"
+                                  target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="./images/wheater.jpg" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-primary font-weight-bold text-uppercase text-center">Wheater App</h5>
+                                <p class="card-text">This JavaScript Weather app will help you to know about the weather of any location.I took the help of API Link to create this project. With this link all the information will be collected from other places with the help of "fetch" method.</p>
+                                <a href="./projects/Weather app/index.html" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 4</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 5</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 6</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 7</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 8</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="https://picsum.photos/200/300" class="rounded d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 9</h5>
+                                <p class="card-text">Work in progress...</p>
+                                <a href="#" class="btn btn-primary" target="_blank"><i class="fas fa-code"></i> Live Demo</a>
+                                <a href="#" class="btn btn-outline-dark" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+          </div>
+        </section>
+        <section class="contact js-scroll" id="contact">
+          <div class="container">
+            <div class="row d-flex justify-content-center w-auto">
+              <div id="form-submitted-msg">Form successfully submitted!</div>
+              <h3 class="col-md-12">Contact</h3>
+              <form id="form" class="form">
+                <div class="input-control form-group">
+                  <input id="fullName" type="text" name="fullName" placeholder="Full Name" required>
+                  <div class="error"></div>
+                </div>
+                <div class="input-control form-group">
+                  <input id="email" type="email" name="email" placeholder="Email">
+                  <div class="error"></div>
+                </div>
+                <div class="input-control form-group">
+                  <textarea id="message" name="message" placeholder="Message"></textarea>
+                  <div class="error"></div>
+                </div>
+                <button type="submit" class="btn btn-primary submit">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer-item">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+  <script type='text/javascript' src='config.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script type="module" src="./javascript/script.js"></script>
+  <script type="module" src="./javascript/greeting.js"></script>
+  <script type="module" src="./javascript/fadeIn.js"></script>
+  <script type="module" src="./javascript/typeWriter.js"></script>
+</body>
+</html>

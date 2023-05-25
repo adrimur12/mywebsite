@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Adrian Muresan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./logo/A.jpg">
+    <title>Personal Website</title>    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        li, a, button{
+            font-family: "Montserrat" sans-serif;
+            font-weight: 550;
+            font-size: 16px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 10%;
+            background-color: #3f414a;
+        }
+        .logo {
+            cursor: pointer;
+            order: 4;
+            margin-left: auto;
+        }
+        nav {
+            order: 1;
+        }
+        .nav_links li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover {
+            color: #0088a9;
+        }
+        .cta {
+            order: 2;
+        }
+        button {
+            padding: 9px 25px;
+            background-color: rgba(0, 136, 169, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
+        .search_bar {
+            order: 3;
+            margin-right: auto;
+            padding: 10px;
+        }
+        .search_bar [type=text] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+        .intro {
+            margin:auto;
+            padding: 20px 10%;
+            background-color: #4ECBC3;
+        }
+        .intro h3, h2, h1, p {
+            font-family: "Montserrat" sans-serif; 
+            font-weight: 500;
+            margin: 20px 0 10px 0;            
+        }
+        .intro h3 {
+            color: #414B58;
+        }
+        .intro h1  {
+            text-decoration: underline;
+        }
+        strong {
+            color: black;
+        }
+        .about {
+            margin:auto;
+            padding: 20px 10%;
+        }
+        .about h1, h4, p {
+            font-family: "Montserrat" sans-serif; 
+            font-weight: 500;
+            margin: 20px 0 10px 0;            
+        }
+        .about h1 {
+            text-decoration:underline #4ECBC3;
+        }
+        .about h4 {
+            color: #4ECBC3;
+        }
+        .about span {
+            color: #383d3b;
+        }
+        .about strong {
+            color: #4ECBC3;
+        }
+        .blog {
+            margin:auto;
+            padding: 20px 10%;
+            background-color: #4ECBC3;
+        }
+        .blog  h1, p {
+            font-family: "Montserrat" sans-serif; 
+            font-weight: 500;
+            margin: 20px 0 10px 0;            
+        }
+        .blog h1  {
+            text-decoration: underline;
+        }
+        .contact-section {
+            background-color: gainsboro;
+        }
+        .contact {
+            font-family: "Montserrat" sans-serif;
+            width: 500px;
+            padding: 30px;
+            background: #FFFFFF;
+            margin: 50px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+        }
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 10px;
+            font: 16px Arial, Helvetica, sans-serif;
+            height: 45px;
+        } 
+        .contact textarea{
+            resize:none;
+            overflow: hidden;
+        }
+        .contact input[type="button"], 
+        .contact input[type="submit"]{
+            box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            background-color: #2CBBBB;
+            border: 1px solid #27A0A0;
+            display: inline-block;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-size: 14px;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .contact input[type="button"]:hover, 
+        .contact input[type="submit"]:hover {
+            background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+            background-color:#34CACA;
+        }
+        .footer {
+            margin:auto;
+            padding: 20px 10%;
+            background-color: #4ECBC3;
+            text-align: center;
+        }
+        .fa {
+            padding: 15px;
+            font-size: 15px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a class="logo" href="index.html"><img src="./logo/logo3.png" alt="logo" width="128" height="128"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+        </nav>
+        <a class="cta" href="#contact"><button>Contact</button></a>
+        <form class="search_bar">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <div id="intro" class="intro">
+        <section>
+            <h3>Hi there!</h3>
+            <p><h2>I'm Adrian</h2></p>
+            <h3>Welcome to my <strong>personal Website</strong></h3>
+            <br>
+            <h1>Introduction</h1>
+            <p>I have decided to start a new and exciting journey to learn Software Development with <a href="https://www.correlation-one.com/">Correlation-One.</a> This is my first landing page, I am loking forward to learn more about coding that can help me to update my own portofolio which is the current landing page.</p>
+        </section>
+    </div>
+    <div id="about" class="about">
+            <section>
+                <h1>About Me</h1>
+                <h4><b>My name is Adrian Muresan.</b></h4>
+                <h4><b>Age: </b><span>30</span></h4>
+                <h4><b>Gender: </b><span>Male</span></h4>
+                <h4><b>Language: </b><span>Romanian, English</span></h4>
+                <p>I am 30 years old and currently I am working at <strong>Amazon MME1 Darlington</strong>, UK within HR department as <strong>Workforce Staffing Coordnator for AMZL</strong>. I have been with Amazon since November 2018, but approximately two years and a half I have been worked with <strong>PMP Recrutiment</strong>, one of the Amazon agnency and after that I've become an <strong>Amazonian</strong>.</p>
+        </section>
+    </div>
+    <div id="blog" class="blog">
+        <section>
+            <h1>Blog</h1>
+            <p>Over the past two weeks with <strong>Correlation-One Software Development</strong> Course I have learned about the <strong>HTML </strong>tags including : <strong>Images</strong> which are one of the most important parts of the website, <strong>Favicons</strong>, <strong>Tables</strong> that are great tools for organization content on the web page, <strong>Iframe</strong>, <strong>Form</strong> that are used to allow users to enter data, <strong>Button</strong>, Drop-down , Raddio button, links, headings, paragrapgh and a litle bit of CCS style. It has been interesting so far and I really enyoing it, I am looking forward to lear more about software development.</p>
+        </section>
+    </div>
+    <div id="contact" class="contact-section">
+        <section class="contact">
+                <h3>Contact</h3>
+                <form>
+                    <input type="text" name="field1" placeholder="Full Name" />
+                    <input type="email" name="field2" placeholder="Email" />
+                    <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+                    <input type="button" value="Send Message" />
+                </form>
+        </section>
+    </div>
+    <div class="footer">
+        <footer>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </footer>
+    </div>
+    <script type="text/javascript">
+
+                function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+        </script>
+</body>
+</html>
