@@ -16,6 +16,15 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/x-icon" href="./logo/A.jpg">
   <title>Personal Website</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HYCTTDJLRN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HYCTTDJLRN');
+</script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -283,13 +292,17 @@
             <div class="row d-flex justify-content-center w-auto">
               <div id="form-submitted-msg">Form successfully submitted!</div>
               <h3 class="col-md-12">Contact</h3>
-              <form id="form" class="form">
+              <form id="form" class="form" name="ContactForm">
                 <div class="input-control form-group">
-                  <input id="fullName" type="text" name="fullName" placeholder="Full Name" required>
+                  <input id="fullName" type="text" name="fullName" placeholder="Full Name">
                   <div class="error"></div>
                 </div>
                 <div class="input-control form-group">
                   <input id="email" type="email" name="email" placeholder="Email">
+                  <div class="error"></div>
+                </div>
+                <div class="input-control form-group">
+                  <input id="phone" type="tel" name="phone" maxlength="11" placeholder="Phone number">
                   <div class="error"></div>
                 </div>
                 <div class="input-control form-group">
